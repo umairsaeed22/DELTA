@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 // Define type for services
@@ -15,7 +15,6 @@ interface FormData {
   email: string;
   phone: string;
   message: string;
-  isNotRobot: boolean;
   services: string[];
 }
 
@@ -26,7 +25,6 @@ const Contactus: React.FC = () => {
     email: "",
     phone: "",
     message: "",
-    isNotRobot: false,
     services: [],
   });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -119,7 +117,6 @@ const Contactus: React.FC = () => {
         email: "",
         phone: "",
         message: "",
-        isNotRobot: false,
         services: [],
       });
     } catch (error) {
@@ -259,7 +256,8 @@ const Contactus: React.FC = () => {
 
                 {/* Button Content */}
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#FA126C] to-[#FF9F4B] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; &rarr;</span>}
+                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; &amp;rarr;</span> // Fixed with &amp;rarr;
+                  }
                 </span>
               </button>
             </div>
