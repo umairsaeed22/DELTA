@@ -256,7 +256,7 @@ const Contactus: React.FC = () => {
 
                 {/* Button Content */}
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#FA126C] to-[#FF9F4B] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; &amp;</span> // Fixed with &amp;rarr;
+                  {isSubmitting ? "Submitting..." : <span>Send Message</span> // Fixed with &amp;rarr;
                   }
                 </span>
               </button>
