@@ -256,7 +256,7 @@ const Contactus: React.FC = () => {
 
                 {/* Button Content */}
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#FA126C] to-[#FF9F4B] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; &amp;rarr;</span> // Fixed with &amp;rarr;
+                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; &amp;</span> // Fixed with &amp;rarr;
                   }
                 </span>
               </button>
@@ -265,7 +265,7 @@ const Contactus: React.FC = () => {
 
           {/* Submission Status */}
           {submissionStatus && (
-            <div className={`mt-4 ${submissionStatus.includes("success") ? "text-green-500" : "text-red-500"}`}>
+            <div className={`mt-4 ${submissionStatus.includes("success") ? "text-[#FB9169]" : "text-red-500"}`}>
               {submissionStatus}
             </div>
           )}

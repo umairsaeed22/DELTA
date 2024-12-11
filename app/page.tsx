@@ -82,7 +82,7 @@ export default function Home() {
     <div className="flex flex-col gap-5 font-[family-name:var(--font-geist-sans)] p-2">
       {/* Add the `animated-section` class to each component */}
       <Navbar />
-      <div className="pb-10 relative z-0">
+      <div className="relative z-0">
         <Hero />
       </div>
       <Servies />
