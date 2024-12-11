@@ -67,7 +67,7 @@ export default function Home() {
             width: 50px;
             height: 50px;
             border: 5px solid transparent;
-            border-top-color: #1d4ed8; /* Tailwind's blue-500 */
+            border-top-color: #FBA465; /* Tailwind's blue-500 */
             border-radius: 50%;
             animation: spin 1s linear infinite;
           }
