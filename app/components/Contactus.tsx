@@ -247,7 +247,7 @@ const Contactus: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="relative inline-flex mt-10 mb-10 h-12 overflow-hidden rounded-full p-[1px] focus:outline-none"
+                className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none"
               >
                 {/* Animated Border */}
                 <span
