@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 // Define type for services
@@ -50,9 +50,8 @@ const Contactus: React.FC = () => {
     { id: 15, content: "Event Management", backgroundColor: "rgb(218, 255, 159)" },
     { id: 16, content: "Heavy Machine Operators", backgroundColor: "rgb(218, 255, 159)" },
     { id: 17, content: "Social Media Handling", backgroundColor: "#8BC34A" },
-    { id: 18, content: "Videography & Editing", backgroundColor: "#8BC34A" }
-];
-
+    { id: 18, content: "Videography & Editing", backgroundColor: "#8BC34A" },
+  ];
 
   // Handle form input changes
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -104,7 +103,7 @@ const Contactus: React.FC = () => {
     };
 
     try {
-      const result = await emailjs.send(
+      await emailjs.send(
         "service_a403oo4", // Replace with your EmailJS Service ID
         "template_k1tfcqc", // Replace with your EmailJS Template ID
         templateParams,
@@ -255,13 +254,12 @@ const Contactus: React.FC = () => {
               >
                 {/* Animated Border */}
                 <span
-                  className={`absolute inset-[-1000%] animate-[spin_1s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#CE604A_0%,#FFF_50%,#FFF_100%)] ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
+                  className={`absolute inset-[-1000%] animate-[spin_1s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#CE604A_0%,#FFF_50%,#FFF_100%)] ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}
                 />
 
                 {/* Button Content */}
                 <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#FA126C] to-[#FF9F4B] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; →</span>}
+                  {isSubmitting ? "Submitting..." : <span>Send Message &nbsp; &rarr;</span>}
                 </span>
               </button>
             </div>
