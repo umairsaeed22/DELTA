@@ -5,6 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Delta Facility Services",
   description: "",
+  // Adding the favicon link
+  icons: {
+    icon: "/logo.png", // Or "/favicon.png" depending on your file
+  },
 };
 
 const poppins = Poppins({
@@ -19,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={poppins.className}
-      >
+      <body className={poppins.className}>
         {children}
       </body>
     </html>

@@ -26,7 +26,7 @@ const Hero = () => {
                     Optimise Growth
                 </p>
                 <TextGenerateEffect
-                    className="text-gray-700 text-[33px] md:text-[45px] leading-[45px] font-bold text-center pt-8"
+                    className="text-gray-700 text-[30px] md:text-[45px] leading-[45px] font-bold text-center pt-8"
                     words="Streamline Your Goals with Our Services & Facilities."
                 />
 

@@ -56,7 +56,7 @@ export const InfiniteMovingCards = ({
         if (containerRef.current) {
             let duration = "60s"; // Default for "normal"
             if (speed === "fast") duration = "30s"; // Fast speed
-            else if (speed === "slow") duration = "500s"; // Slower speed
+            else if (speed === "slow") duration = "5000s"; // Slower speed
             containerRef.current.style.setProperty("--animation-duration", duration);
         }
     };

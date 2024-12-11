@@ -1213,9 +1213,6 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
-.p-6 {
-  padding: 1.5rem;
-}
 .p-\[1px\] {
   padding: 1px;
 }
@@ -1311,6 +1308,9 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[30px\] {
+  font-size: 30px;
 }
 .font-bold {
   font-weight: 700;
@@ -1615,6 +1615,10 @@ body {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 
   .md\:text-\[20px\] {

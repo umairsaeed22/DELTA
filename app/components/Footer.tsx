@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                 <FaInstagram size={20} />
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/company/7066668/admin/feed/posts/"
+                href="https://www.linkedin.com/company/delta-hub-facility-services/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#FF5555] hover:text-[#EF4D48]"
