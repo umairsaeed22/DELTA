@@ -134,7 +134,7 @@ const Contactus: React.FC = () => {
       </span>
 
       <p className="text-gray-500 text-xs md:text-sm leading-5 font-normal text-center mb-7">
-        Have a question or need a quotation? Our team is here to assist you and will get back to you shortly. Let's take your business to the next level with our digital solutions.
+        Have a question or need a quotation? Our team is here to assist you and will get back to you shortly. Let&apos;s take your business to the next level with our digital solutions.
       </p>
 
       <div className="flex flex-row justify-between space-x-8">
