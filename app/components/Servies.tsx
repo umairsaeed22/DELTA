@@ -111,13 +111,13 @@ const Services = () => {
                     <div
                         key={service.id}
                         className={`relative h-full rounded-lg p-4 flex items-center justify-center text-center font-bold text-lg text-gray-800 shadow-lg hover:shadow-xl ${index % 10 === 0
-                                ? "col-span-2 md:col-span-3 lg:col-span-3 row-span-2"
-                                : index % 7 === 0
-                                    ? "col-span-2"
-                                    : index % 5 === 0
-                                        ? "row-span-2"
-                                        : ""
-                            }`}
+                            ? "col-span-2 md:col-span-3 lg:col-span-3 row-span-2"
+                            : index % 7 === 0
+                                ? "col-span-2"
+                                : index % 5 === 0
+                                    ? "row-span-2"
+                                    : ""
+                        }`}
                         style={{
                             backgroundColor: !service.imgUrl && !service.src ? service.backgroundColor : "transparent",
                             backgroundSize: "cover",
@@ -154,6 +154,8 @@ const Services = () => {
                                 loop
                                 muted
                                 playsInline
+                                preload="auto" // Ensures the video loads faster
+                                poster={service.imgUrl || "/default-placeholder.jpg"} // Placeholder before video is loaded
                                 style={{ objectFit: "cover" }}
                             >
                                 <source src={service.src} type="video/mp4" />
@@ -177,7 +179,6 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-
         </div>
     );
 };

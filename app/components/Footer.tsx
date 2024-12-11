@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           {/* Social Media Links */}
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold">Follow Us</h3>
-            <div className="hidden md:flex space-x-4">
+            <div className="flex flex-row space-x-4">
               <motion.a
                 href="https://www.facebook.com/people/Delta-Facility-Services/61553752537939/"
                 target="_blank"
