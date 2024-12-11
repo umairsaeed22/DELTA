@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   }, [isMenuOpen]); // Trigger on isMenuOpen change
 
   return (
-    <nav className="p-6 flex items-center justify-between w-full">
+    <nav className="p-2 md:p-6 flex items-center justify-between w-full">
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <Image
